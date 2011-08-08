@@ -1,0 +1,7 @@
+DebugTextAreaFont
+ {
+   type       truetype
+   source     AlteHaasGroteskRegular.ttf
+   size       13
+   resolution 72
+ }

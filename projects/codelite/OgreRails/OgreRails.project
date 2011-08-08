@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="OgreRails" InternalType="Console">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="../../../src/Application.cpp"/>
+    <File Name="../../../src/Application.hpp"/>
+    <File Name="../../../src/BlindPathChooser.hpp"/>
+    <File Name="../../../src/CodeConfig.hpp"/>
+    <File Name="../../../src/FrameListener.hpp"/>
+    <File Name="../../../src/Main.cpp"/>
+    <File Name="../../../src/PathBuilder.hpp"/>
+    <VirtualDirectory Name="path">
+      <File Name="../../../src/path/CurveSegment.cpp"/>
+      <File Name="../../../src/path/CurveSegment.hpp"/>
+      <File Name="../../../src/path/CurveSegmentFactory.hpp"/>
+      <File Name="../../../src/path/CurveSegmentInstance.hpp"/>
+      <File Name="../../../src/path/Endpoint.hpp"/>
+      <File Name="../../../src/path/Path.hpp"/>
+      <File Name="../../../src/path/PathChooser.hpp"/>
+      <File Name="../../../src/path/Segment.hpp"/>
+      <File Name="../../../src/path/SegmentFactory.hpp"/>
+      <File Name="../../../src/path/SegmentGraphicFactory.cpp"/>
+      <File Name="../../../src/path/SegmentGraphicFactory.hpp"/>
+      <File Name="../../../src/path/SegmentGraphicInstance.hpp"/>
+      <File Name="../../../src/path/SegmentInstance.hpp"/>
+      <File Name="../../../src/path/Slider.hpp"/>
+      <File Name="../../../src/path/StraightSegment.hpp"/>
+      <File Name="../../../src/path/StraightSegmentFactory.hpp"/>
+      <File Name="../../../src/path/StraightSegmentInstance.hpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="util">
+      <File Name="../../../src/util/Coords.hpp"/>
+      <File Name="../../../src/util/DebugConsole.cpp"/>
+      <File Name="../../../src/util/DebugConsole.hpp"/>
+      <File Name="../../../src/util/UniqueIdGenerator.cpp"/>
+      <File Name="../../../src/util/UniqueIdGenerator.hpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="vehicles">
+      <File Name="../../../src/vehicles/Consist.hpp"/>
+      <File Name="../../../src/vehicles/MovingConsist.hpp"/>
+      <File Name="../../../src/vehicles/PathSpan.hpp"/>
+      <File Name="../../../src/vehicles/TwoBogieVehicle.hpp"/>
+      <File Name="../../../src/vehicles/TwoBogieVehiclePrototype.hpp"/>
+      <File Name="../../../src/vehicles/Vehicle.hpp"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Required="yes" PreCompiledHeader="">
+        <IncludePath Value="."/>
+        <IncludePath Value="/usr/include/OGRE"/>
+      </Compiler>
+      <Linker Options="" Required="yes">
+        <LibraryPath Value="/usr/lib/"/>
+        <LibraryPath Value="/usr/lib64/"/>
+        <Library Value="libOgreMain.so"/>
+        <Library Value="libOIS.so"/>
+        <Library Value="libstdc++.so"/>
+        <Library Value="libm.so"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="../../../bin/$(ProjectName)" IntermediateDirectory="../../../bin" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;"/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Required="yes" PreCompiledHeader="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;"/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="doc">
+    <File Name="../../../README.txt"/>
+    <File Name="../../../Template.cpp.txt"/>
+  </VirtualDirectory>
+</CodeLite_Project>

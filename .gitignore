@@ -1,0 +1,6 @@
+# ------------ .GITIGNORE for OgreRails --------------
+
+# Temp/backup files
+
+*~
+*.swp.*
