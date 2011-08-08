@@ -1,0 +1,13 @@
+material OgreRails/GrassTile
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture GrassTile_512x512.jpg
+			}
+		}
+	}
+}

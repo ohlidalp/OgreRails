@@ -1,0 +1,18 @@
+ _______________________________________________________________________________
+|
+|                             BezieRails Project
+|                                 CHANGELOG
+
+________________________________________________________________________________
+* r1 *
+
+Initial commit. The code is somewhere in the middle of implementing Trails,
+so it's broken, but the original working version can still be recovered.
+
+________________________________________________________________________________
+* r2 *
+
+- Added changelog file
+- Big rewrite of path system
+
+
