@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OgreRails" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\..\..\bin\Debug\OgreRails" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\..\..\bin\Debug" />
+				<Option object_output="..\..\..\obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lOgreMain" />
+					<Add option="-lOIS" />
+					<Add option="-static-libgcc" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="..\..\..\bin\OgreRails" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\..\..\bin" />
+				<Option object_output="..\..\..\obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lOgreMain" />
+					<Add option="-lOIS" />
+					<Add option="-static-libgcc" />
+					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\gcc\mingw32\4.4.1\libstdc++.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+		</Linker>
+		<Unit filename="..\..\..\src\Application.cpp" />
+		<Unit filename="..\..\..\src\Application.hpp" />
+		<Unit filename="..\..\..\src\BlindPathChooser.hpp" />
+		<Unit filename="..\..\..\src\CodeConfig.hpp" />
+		<Unit filename="..\..\..\src\FrameListener.hpp" />
+		<Unit filename="..\..\..\src\Main.cpp" />
+		<Unit filename="..\..\..\src\PathBuilder.hpp" />
+		<Unit filename="..\..\..\src\path\CurveSegment.cpp" />
+		<Unit filename="..\..\..\src\path\CurveSegment.hpp" />
+		<Unit filename="..\..\..\src\path\CurveSegmentFactory.hpp" />
+		<Unit filename="..\..\..\src\path\CurveSegmentInstance.hpp" />
+		<Unit filename="..\..\..\src\path\Endpoint.hpp" />
+		<Unit filename="..\..\..\src\path\Path.hpp" />
+		<Unit filename="..\..\..\src\path\PathChooser.hpp" />
+		<Unit filename="..\..\..\src\path\Segment.hpp" />
+		<Unit filename="..\..\..\src\path\SegmentFactory.hpp" />
+		<Unit filename="..\..\..\src\path\SegmentGraphicFactory.cpp" />
+		<Unit filename="..\..\..\src\path\SegmentGraphicFactory.hpp" />
+		<Unit filename="..\..\..\src\path\SegmentGraphicInstance.hpp" />
+		<Unit filename="..\..\..\src\path\SegmentInstance.hpp" />
+		<Unit filename="..\..\..\src\path\Slider.hpp" />
+		<Unit filename="..\..\..\src\path\StraightSegment.hpp" />
+		<Unit filename="..\..\..\src\path\StraightSegmentFactory.hpp" />
+		<Unit filename="..\..\..\src\path\StraightSegmentInstance.hpp" />
+		<Unit filename="..\..\..\src\util\Coords.hpp" />
+		<Unit filename="..\..\..\src\util\DebugConsole.cpp" />
+		<Unit filename="..\..\..\src\util\DebugConsole.hpp" />
+		<Unit filename="..\..\..\src\util\UniqueIdGenerator.cpp" />
+		<Unit filename="..\..\..\src\util\UniqueIdGenerator.hpp" />
+		<Unit filename="..\..\..\src\vehicles\Consist.hpp" />
+		<Unit filename="..\..\..\src\vehicles\MovingConsist.hpp" />
+		<Unit filename="..\..\..\src\vehicles\PathSpan.hpp" />
+		<Unit filename="..\..\..\src\vehicles\TwoBogieVehicle.hpp" />
+		<Unit filename="..\..\..\src\vehicles\TwoBogieVehiclePrototype.hpp" />
+		<Unit filename="..\..\..\src\vehicles\Vehicle.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

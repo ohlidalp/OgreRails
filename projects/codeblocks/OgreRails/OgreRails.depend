@@ -1,0 +1,168 @@
+# depslib dependency file v1.0
+1314706713 source:c:\users\sterlyn\projects\ogrerails\src\main.cpp
+	"Application.hpp"
+	"windows.h"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\application.hpp
+	"OgreTextAreaOverlayElement.h"
+	<memory>
+	"FrameListener.hpp"
+	"CodeConfig.hpp"
+	"path/CurveSegmentFactory.hpp"
+	"path/StraightSegmentFactory.hpp"
+	"vehicles/MovingConsist.hpp"
+	"util/DebugConsole.hpp"
+
+1314740162 c:\users\sterlyn\projects\ogrerails\src\framelistener.hpp
+	<Ogre.h>
+	"OgreStringConverter.h"
+	"OgreException.h"
+	<ExampleApplication.h>
+	<OIS/OIS.h>
+	"OgreRTShaderSystem.h"
+	"CodeConfig.hpp"
+	"vehicles/MovingConsist.hpp"
+	"util/DebugConsole.hpp"
+	<sstream>
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\codeconfig.hpp
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\vehicles\movingconsist.hpp
+	"Consist.hpp"
+
+1314708242 c:\users\sterlyn\projects\ogrerails\src\vehicles\consist.hpp
+	"TwoBogieVehiclePrototype.hpp"
+	"../path/PathChooser.hpp"
+	"../path/Slider.hpp"
+	"../util/DebugConsole.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\vehicles\twobogievehicleprototype.hpp
+	"../util/UniqueIdGenerator.hpp"
+	"TwoBogieVehicle.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\util\uniqueidgenerator.hpp
+	<string>
+	<cstdio>
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\vehicles\twobogievehicle.hpp
+	"../util/UniqueIdGenerator.hpp"
+	"../path/Slider.hpp"
+	"Vehicle.hpp"
+	"../util/DebugConsole.hpp"
+	<sstream>
+	<iomanip>
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\slider.hpp
+	"Path.hpp"
+
+1314708213 c:\users\sterlyn\projects\ogrerails\src\path\path.hpp
+	"SegmentInstance.hpp"
+
+1314708430 c:\users\sterlyn\projects\ogrerails\src\path\segmentinstance.hpp
+	"Segment.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\segment.hpp
+	"../util/Coords.hpp"
+	"../CodeConfig.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\util\coords.hpp
+	"OgreVector3.h"
+	"../CodeConfig.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\vehicles\vehicle.hpp
+	"PathSpan.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\vehicles\pathspan.hpp
+	"../path/Slider.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\util\debugconsole.hpp
+	"../CodeConfig.hpp"
+	"OgreTextAreaOverlayElement.h"
+	"OgreStringConverter.h"
+	"OgreSingleton.h"
+	"OgreOverlayManager.h"
+	"OgreOverlayContainer.h"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\pathchooser.hpp
+	"Endpoint.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\endpoint.hpp
+	"Path.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\curvesegmentfactory.hpp
+	"CurveSegmentInstance.hpp"
+	"SegmentFactory.hpp"
+	"SegmentGraphicFactory.hpp"
+
+1314708260 c:\users\sterlyn\projects\ogrerails\src\path\curvesegmentinstance.hpp
+	<memory>
+	"../CodeConfig.hpp"
+	"../util/Coords.hpp"
+	"CurveSegment.hpp"
+	"SegmentGraphicInstance.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\curvesegment.hpp
+	"SegmentInstance.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\segmentgraphicinstance.hpp
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\segmentfactory.hpp
+	"SegmentInstance.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\segmentgraphicfactory.hpp
+	<memory>
+	"OgreVector3.h"
+	"SegmentGraphicInstance.hpp"
+	"../util/Coords.hpp"
+	"Segment.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\straightsegmentfactory.hpp
+	"StraightSegmentInstance.hpp"
+	"SegmentFactory.hpp"
+	"SegmentGraphicFactory.hpp"
+
+1314708274 c:\users\sterlyn\projects\ogrerails\src\path\straightsegmentinstance.hpp
+	"StraightSegment.hpp"
+	"SegmentGraphicInstance.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\path\straightsegment.hpp
+	"SegmentInstance.hpp"
+	<iomanip>
+
+1314706713 source:c:\users\sterlyn\projects\ogrerails\src\path\curvesegment.cpp
+	"CurveSegment.hpp"
+
+1314706713 source:c:\users\sterlyn\projects\ogrerails\src\path\segmentgraphicfactory.cpp
+	"OgreSceneNode.h"
+	"OgreMath.h"
+	"OgreVector3.h"
+	"OgreMatrix3.h"
+	"OgreEntity.h"
+	"SegmentGraphicFactory.hpp"
+	"Segment.hpp"
+	"../util/UniqueIdGenerator.hpp"
+
+1314706713 source:c:\users\sterlyn\projects\ogrerails\src\util\debugconsole.cpp
+	"DebugConsole.hpp"
+
+1314706713 source:c:\users\sterlyn\projects\ogrerails\src\util\uniqueidgenerator.cpp
+	"UniqueIdGenerator.hpp"
+
+1314706713 source:c:\users\sterlyn\projects\ogrerails\src\application.cpp
+	"OgreOverlayElementFactory.h"
+	"Application.hpp"
+	"path/StraightSegment.hpp"
+	"path/CurveSegment.hpp"
+	"path/Endpoint.hpp"
+	"BlindPathChooser.hpp"
+	"PathBuilder.hpp"
+
+1314708492 c:\users\sterlyn\projects\ogrerails\src\blindpathchooser.hpp
+	"path/PathChooser.hpp"
+
+1314706713 c:\users\sterlyn\projects\ogrerails\src\pathbuilder.hpp
+	"OgreSceneManager.h"
+	"OgreSceneNode.h"
+	"path/Path.hpp"
+	"path/SegmentFactory.hpp"
+

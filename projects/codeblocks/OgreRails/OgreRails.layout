@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\..\..\src\Application.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="5077" topLine="291" />
+	</File>
+	<File name="..\..\..\src\Application.hpp" open="1" top="0" tabpos="4">
+		<Cursor position="855" topLine="4" />
+	</File>
+	<File name="..\..\..\src\BlindPathChooser.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1503" topLine="25" />
+	</File>
+	<File name="..\..\..\src\FrameListener.hpp" open="1" top="1" tabpos="1">
+		<Cursor position="13778" topLine="444" />
+	</File>
+	<File name="..\..\..\src\Main.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="977" topLine="22" />
+	</File>
+	<File name="..\..\..\src\path\CurveSegmentInstance.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1397" topLine="28" />
+	</File>
+	<File name="..\..\..\src\path\Path.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1449" topLine="41" />
+	</File>
+	<File name="..\..\..\src\path\SegmentInstance.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1231" topLine="30" />
+	</File>
+	<File name="..\..\..\src\path\StraightSegmentInstance.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1343" topLine="20" />
+	</File>
+	<File name="..\..\..\src\vehicles\Consist.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="2074" topLine="102" />
+	</File>
+</CodeBlocks_layout_file>
