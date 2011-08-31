@@ -44,7 +44,7 @@ class StraightSegmentInstance: public SegmentInstance
 	virtual ~StraightSegmentInstance(){}
 
 	float getLength() const {
-		this->mPrototype->getLength();
+		return this->mPrototype->getLength();
 	}
 
 };

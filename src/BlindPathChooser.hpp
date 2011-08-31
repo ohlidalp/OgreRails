@@ -35,7 +35,6 @@ class BlindPathChooser: public Paths::PathChooser
 	~BlindPathChooser(){}
 
 	Paths::Path * getNextPath(Paths::Endpoint & endpoint, Paths::Path * path ) const {
-		unsigned int n = endpoint.getNumPaths();
 		if (endpoint.isDeadEnd()) {
 			return 0;
 		}
@@ -53,6 +52,7 @@ class BlindPathChooser: public Paths::PathChooser
 				}
 			}
 		}
+        return 0;
 	}
 };
 

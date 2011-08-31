@@ -57,7 +57,6 @@ class Path
 
 	void addSegment(SegmentInstance * seg, Path::End end = Path::END_EXIT) {
 		Segment::Neighbour endSide = (end == Path::END_EXIT) ? Segment::NEIGHBOUR_NEXT : Segment::NEIGHBOUR_PREVIOUS;
-		Path::End otherEnd = Path::otherEnd(end);
 
 		// Add segment to linked list
 		seg->setNeighbour(0, endSide);

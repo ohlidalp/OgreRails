@@ -1,6 +1,6 @@
 /*
 	Copyright (c) 2000-2009 Torus Knot Software Ltd
-	Copyright 2010 - 2011 Petr OhlÃ­dal
+	Copyright 2010 - 2011 Petr Ohlídal
 
 	This file is a part of OgreRails
 
@@ -131,24 +131,30 @@ using namespace Ogre;
 		paramList.insert(std::make_pair(std::string("w32_mouse"), std::string("DISCL_FOREGROUND")));
 		paramList.insert(std::make_pair(std::string("w32_mouse"), std::string("DISCL_NONEXCLUSIVE")));
 		#else // Linux
-
 		// Option: trap cursor in window
 		paramList.insert(std::make_pair(std::string("x11_mouse_grab"),std::string(TRAP_CURSOR?"true":"false")));
 		// Option: hide hardware cursor
 		paramList.insert(std::make_pair(std::string("x11_mouse_hide"),std::string("false")));
 		#endif
 
-		mInputManager = OIS::InputManager::createInputSystem( paramList );
+		mInputManager = OIS::InputManager::createInputSystem(paramList);
 
 		//Create all devices (We only catch joystick exceptions here, as, most people have Key/Mouse)
 		mKeyboard = static_cast<OIS::Keyboard*>(mInputManager->createInputObject( OIS::OISKeyboard, bufferedKeys ));
 		mMouse = static_cast<OIS::Mouse*>(mInputManager->createInputObject( OIS::OISMouse, bufferedMouse ));
+
+		// The joystick creation code causes uncaught exception termination under Windows7 + MinGW 4.5 + TDM-GCC
+		// Code temporarily disabled
+		#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+		mJoy = 0;
+		#else // Linux
 		try {
 			mJoy = static_cast<OIS::JoyStick*>(mInputManager->createInputObject( OIS::OISJoyStick, bufferedJoy ));
 		}
 		catch(...) {
 			mJoy = 0;
 		}
+		#endif
 
 		//Set initial mouse clipping size
 		windowResized(mWindow);
@@ -451,11 +457,12 @@ using namespace Ogre;
 		DebugConsole::getSingleton().reset();
 		Vector3 v = mCamera->getPosition();
 		std::stringstream s;
-		s<<"OgreRails v"<<VERSION_MAJOR<<"."<<VERSION_MINOR
+		s<<"OgreRails v"<<VERSION_MAJOR<<"."<<VERSION_MINOR<<" Alpha"
 		<<"\n\nControls:\n"
 		<<"\tW/S/A/D: Move camera\n"
 		<<"\tLeftArrow/RightArrow: Rotate camera\n"
 		<<"\t+/-: Zoom camera\n"
+		<<"\tEscape: Exit\n"
 		// <<"Cam.Pos: x" << v.x <<" zY" << v.z <<" yZ" << v.y
 		<<std::endl;
 		DebugConsole::getSingleton().print(s.str());

@@ -52,7 +52,7 @@ class CurveSegmentInstance: public SegmentInstance
 	~CurveSegmentInstance(){}
 
 	float getLength() const {
-		this->mPrototype->getLength();
+		return this->mPrototype->getLength();
 	}
 
 };

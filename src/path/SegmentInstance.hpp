@@ -36,18 +36,18 @@ class SegmentInstance
 
 	Segment* mPrototype;
 
+	Coords mMapPos; ///< Snap-point coordinates
+
 	SegmentInstance* mNeighbours[2];
 
 	Segment::Orientation mOrientation;
-
-	Coords mMapPos; ///< Snap-point coordinates
 
 		public:
 
 	/** Constructor
 	*/
 	SegmentInstance(Segment* proto, Coords const& pos, Segment::Orientation o):
-		mPrototype(proto), mMapPos(pos), mOrientation(o){}
+		mPrototype(proto), mMapPos(pos), mOrientation(o) {}
 
 	virtual ~SegmentInstance(){}
 

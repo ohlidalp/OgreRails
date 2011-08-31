@@ -84,9 +84,8 @@ class Consist
 	* @return True if move was performed, false if dead end was hit.
 	*/
 	bool move(float & distance){
-		std::stringstream s;
-		Paths::SegmentInstance* seg = mSlider.getSegment();
 		/*
+        std::stringstream s;
 		s << "Consist::move() segment: " << seg
 			<< " seg.len.: " << seg->getLength()
 			<< " offset: " << mSlider.getSegOffset()
